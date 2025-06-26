@@ -1,175 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Your Name - Portfolio')</title>
-    <!-- Tailwind CSS CDN -->
+    <title>@yield('title', 'Rafi Nurfadhil Putra')</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0f172a; /* Deep charcoal blue */
+            background-color: #0d1222; /* Even deeper charcoal blue */
             color: #e2e8f0; /* Light gray text */
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            /* Subtle background pattern for depth */
+            background-image: radial-gradient(circle at top left, #1a202c 1px, transparent 1px),
+                              radial-gradient(circle at bottom right, #1a202c 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
         }
         /* Custom styles for smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
         .section-padding {
-            padding: 100px 0; /* More generous padding for sections */
+            padding: 100px 0; 
         }
         .card-base {
             background-color: #1a202c; /* Slightly lighter dark for cards */
-            border: 1px solid rgba(30, 41, 59, 0.7); /* Subtle border */
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Deeper shadow */
-            transition: all 0.3s ease-in-out; /* Global transition for hover effects */
+            border: 1px solid rgba(49, 56, 75, 0.7); /* Refined subtle border */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); /* Deeper, softer shadow */
+            transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother transition curve */
         }
         .card-base:hover {
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-            transform: translateY(-5px);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
+            transform: translateY(-8px) scale(1.01); /* More pronounced lift and slight scale */
+            border-color: #4a75ff; /* Accent border on hover */
         }
         .text-gradient {
-            background-image: linear-gradient(to right, #60a5fa, #3b82f6, #0ea5e9); /* Blue gradient */
+            background-image: linear-gradient(to right, #4a75ff, #00c6ff, #007bff); /* Richer blue gradient */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             color: transparent;
         }
         .btn-primary-gradient {
-            background-image: linear-gradient(to right, #60a5fa, #3b82f6);
-            transition: all 0.3s ease-in-out;
+            background-image: linear-gradient(to right, #4a75ff, #00c6ff);
+            transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
         .btn-primary-gradient:hover {
-            background-image: linear-gradient(to right, #3b82f6, #60a5fa);
-            box-shadow: 0 8px 15px rgba(59, 130, 246, 0.4);
+            background-image: linear-gradient(to right, #00c6ff, #4a75ff); /* Reverse gradient on hover */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(74, 117, 255, 0.6); /* More prominent glow */
+            transform: translateY(-3px); /* Subtle lift */
         }
         .input-style {
             background-color: #1e293b; /* Darker input background */
             border: 1px solid #334155; /* Subtle border */
             color: #f8fafc; /* Light input text */
-            transition: all 0.2s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            border-radius: 0.5rem; /* Rounded corners */
         }
         .input-style:focus {
-            border-color: #3b82f6; /* Blue focus border */
-            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Blue focus ring */
+            border-color: #4a75ff; /* Primary blue focus border */
+            box-shadow: 0 0 0 3px rgba(74, 117, 255, 0.5); /* Primary blue focus ring */
+            background-color: #151a2e; /* Slightly darker on focus */
         }
 
-        /* Keyframe Animations */
+      
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
         @keyframes slideInUp {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
         @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-20px); }
+            from { opacity: 0; transform: translateX(-30px); } 
             to { opacity: 1; transform: translateX(0); }
         }
         @keyframes pulse-subtle {
             0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.05); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 0.9; }
         }
         @keyframes pulse-width {
             from { width: 0%; opacity: 0; }
-            to { opacity: 1; } /* Width will be controlled by inline style */
+            to { opacity: 1; } 
         }
 
-        /* Apply animations with Tailwind classes */
-        .animate-fadeIn {
-            animation: fadeIn 1s ease-out forwards;
+        .animated-fadeIn {
+            animation: fadeIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
         }
-        .animate-slideInUp {
-            animation: slideInUp 0.8s ease-out forwards;
+        .animated-slideInUp {
+            animation: slideInUp 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
         }
-        .animate-slideInLeft {
-            animation: slideInLeft 0.8s ease-out forwards;
+        .animated-slideInLeft {
+            animation: slideInLeft 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
         }
-        .animate-pulse-subtle {
-            animation: pulse-subtle 2s infinite ease-in-out;
+        .animated-pulse-subtle {
+            animation: pulse-subtle 2.5s infinite ease-in-out;
         }
-        .animate-pulse-width {
-            animation: pulse-width 1.5s ease-out forwards; /* Applied with inline width */
+        .animated-pulse-width {
+            animation: pulse-width 1.5s ease-out forwards;
         }
 
-        /* Delay utilities for staggered animations (these will need to be added manually as classes) */
-        .animation-delay-200 { animation-delay: 0.2s; }
-        .animation-delay-400 { animation-delay: 0.4s; }
-        .animation-delay-600 { animation-delay: 0.6s; }
-        .animation-delay-800 { animation-delay: 0.8s; }
-        .animation-delay-1000 { animation-delay: 1s; }
-        .animation-delay-1200 { animation-delay: 1.2s; }
+        [data-animate] {
+            opacity: 0;
+        }
+
+        @media (max-width: 767px) {
+            .header-cta {
+                display: none; 
+            }
+            .footer-grid {
+                grid-template-columns: 1fr; 
+                text-align: center;
+            }
+            .footer-grid div {
+                margin-bottom: 1.5rem; 
+            }
+            .footer-grid div:last-child {
+                margin-bottom: 0;
+            }
+            .footer-grid ul {
+                padding-left: 0;
+            }
+            .footer-grid li {
+                list-style: none;
+            }
+            .footer-social-links {
+                justify-content: center; 
+            }
+        }
     </style>
 </head>
-<body class="antialiased">
-    <!-- Navigation Bar -->
-    <nav class="bg-gray-900 bg-opacity-70 backdrop-blur-md shadow-xl p-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center px-4 md:px-8">
-            <a href="{{ url('/') }}" class="text-3xl font-extrabold text-blue-400 hover:text-blue-300 transition duration-300 ease-in-out tracking-wide">YOUR NAME</a>
-            <div class="hidden md:flex space-x-8">
-                <a href="{{ url('/') }}" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out p-2 rounded-md">Home</a>
-                <a href="{{ url('/about') }}" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out p-2 rounded-md">About Me</a>
-                <a href="{{ url('/skills') }}" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out p-2 rounded-md">Skills</a>
-                <a href="{{ url('/portfolio') }}" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out p-2 rounded-md">Portfolio</a>
-                <a href="{{ url('/resume') }}" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out p-2 rounded-md">Resume</a>
-                <a href="{{ url('/contact') }}" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out p-2 rounded-md">Contact</a>
-            </div>
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-blue-400 focus:outline-none p-2 rounded-md">
+<body class="antialiased flex flex-col min-h-screen">
+    {{-- NEW Header Design --}}
+    <header class="bg-gray-900 bg-opacity-90 backdrop-blur-md shadow-xl p-4 sticky top-0 z-50 border-b border-gray-700/50">
+        <div class="container mx-auto flex items-center justify-between px-4 md:px-8">
+            {{-- Logo / Brand Name --}}
+            <a href="{{ url('/') }}" class="text-3xl lg:text-4xl font-extrabold text-blue-400 hover:text-blue-300 transition duration-300 ease-in-out tracking-wider">
+                Rafi Nurfadhil Putra <span class="text-gray-500 text-base font-inter font-normal ml-2 hidden sm:inline"></span>
+            </a>
+
+            {{-- Desktop Navigation --}}
+            <nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                <a href="{{ url('/') }}" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out relative group p-2 rounded-md">
+                    Home
+                    <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="{{ url('/about') }}" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out relative group p-2 rounded-md">
+                    About Me
+                    <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="{{ url('/skills') }}" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out relative group p-2 rounded-md">
+                    Skills
+                    <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="{{ url('/portfolio') }}" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out relative group p-2 rounded-md">
+                    Portfolio
+                    <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            
+                <a href="{{ url('/contact') }}" class="btn-primary-gradient text-white px-5 py-2 rounded-full text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
+                    Contact Now
+                </a>
+            </nav>
+
+            {{-- Mobile Menu Button --}}
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-blue-400 focus:outline-none p-2 rounded-md transition duration-300 ease-in-out">
                 <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-4 pt-2 pb-4 shadow-md">
-            <a href="{{ url('/') }}" class="block text-gray-300 hover:text-blue-400 py-2 px-4 rounded-md text-base font-medium">Home</a>
-            <a href="{{ url('/about') }}" class="block text-gray-300 hover:text-blue-400 py-2 px-4 rounded-md text-base font-medium">About Me</a>
-            <a href="{{ url('/skills') }}" class="block text-gray-300 hover:text-blue-400 py-2 px-4 rounded-md text-base font-medium">Skills</a>
-            <a href="{{ url('/portfolio') }}" class="block text-gray-300 hover:text-blue-400 py-2 px-4 rounded-md text-base font-medium">Portfolio</a>
-            <a href="{{ url('/resume') }}" class="block text-gray-300 hover:text-blue-400 py-2 px-4 rounded-md text-base font-medium">Resume</a>
-            <a href="{{ url('/contact') }}" class="block text-gray-300 hover:text-blue-400 py-2 px-4 rounded-md text-base font-medium">Contact</a>
+        {{-- Mobile Menu (slide-down) --}}
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95 backdrop-blur-sm px-4 pt-4 pb-6 shadow-xl transition-all duration-300 ease-in-out">
+            <a href="{{ url('/') }}" class="block text-gray-200 hover:text-blue-400 py-3 px-6 rounded-lg text-lg font-medium transition duration-300 ease-in-out hover:bg-gray-700/50 mb-2">Home</a>
+            <a href="{{ url('/about') }}" class="block text-gray-200 hover:text-blue-400 py-3 px-6 rounded-lg text-lg font-medium transition duration-300 ease-in-out hover:bg-gray-700/50 mb-2">About Me</a>
+            <a href="{{ url('/skills') }}" class="block text-gray-200 hover:text-blue-400 py-3 px-6 rounded-lg text-lg font-medium transition duration-300 ease-in-out hover:bg-gray-700/50 mb-2">Skills</a>
+            <a href="{{ url('/portfolio') }}" class="block text-gray-200 hover:text-blue-400 py-3 px-6 rounded-lg text-lg font-medium transition duration-300 ease-in-out hover:bg-gray-700/50 mb-2">Portfolio</a>
+            <a href="{{ url('/contact') }}" class="block text-gray-200 hover:text-blue-400 py-3 px-6 rounded-lg text-lg font-medium transition duration-300 ease-in-out hover:bg-gray-700/50 mb-2">Contact</a>
         </div>
-    </nav>
+    </header>
 
-    <main class="min-h-screen">
+    <main class="flex-grow">
         @yield('content')
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center shadow-inner mt-12">
-        <div class="container mx-auto px-4 md:px-8">
-            <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
-            <div class="flex justify-center space-x-6 mt-4">
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300">
-                    <svg fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 110-4 2 2 0 010 4z"></path></svg>
-                </a>
-                <a href="https://github.com/yourprofile" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300">
-                    <svg fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.475.088.687-.206.687-.457 0-.223-.008-.813-.013-1.636-2.782.603-3.37-1.34-3.37-1.34-.454-1.15-1.11-1.462-1.11-1.462-.908-.62.068-.608.068-.608 1.007.073 1.532 1.03 1.532 1.03.89 1.528 2.336 1.085 2.903.829.09-.643.349-1.085.635-1.336-2.22-.25-4.555-1.11-4.555-4.945 0-1.09.39-1.986 1.029-2.684-.103-.252-.446-1.272.097-2.659 0 0 .84-.27 2.75 1.025A9.643 9.643 0 0112 6.844c.85.006 1.7.113 2.508.337 1.909-1.295 2.748-1.025 2.748-1.025.542 1.387.2 2.407.098 2.659.64.698 1.028 1.594 1.028 2.684 0 3.844-2.339 4.69-4.565 4.935.359.309.678.92.678 1.855 0 1.336-.012 2.417-.012 2.747 0 .254.209.55.694.456C20.137 20.19 23 16.42 23 12.017 23 6.484 18.522 2 13 2h-1z" clip-rule="evenodd"></path></svg>
-                </a>
-                <a href="https://twitter.com/yourprofile" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-110">
-                    <svg fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646A4.18 4.18 0 0021.6 4.6c-.772.434-1.62.75-2.527.921A4.149 4.149 0 0012.02 2c-2.457 0-4.444 1.992-4.444 4.444 0 .35.04.69.118 1.02A12.553 12.553 0 013 4.298a4.484 4.484 0 001.385 5.978 4.095 4.095 0 01-1.8-.49v.056c0 2.152 1.53 3.945 3.567 4.368A4.183 4.183 0 016.35 15.6c-.198 0-.394-.01-.585-.055.56 1.76 2.195 3.044 4.138 3.078A8.346 8.346 0 013.5 20.08c-.768 0-1.52-.045-2.246-.132.98 1.83 2.766 3.102 4.885 3.23a11.758 11.758 0 007.457 2.585c8.455 0 13.045-6.974 13.045-13.046 0-.199-.004-.398-.013-.597A9.324 9.324 0 0022 5.92l-.001-.001-.001-.001z"></path></svg>
-                </a>
+    {{-- NEW Footer Design --}}
+    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800 shadow-2xl">
+        <div class="container mx-auto px-4 md:px-8 footer-grid grid grid-cols-1 md:grid-cols-3 gap-10">
+            {{-- Section 1: Brand & About --}}
+            <div class="md:col-span-1">
+                <h3 class="text-3xl font-extrabold text-blue-400 mb-4 font-montserrat tracking-wide">
+                    Rafi Nurfadhil Putra
+                </h3>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                    Passionate about crafting dynamic web experiences and bringing innovative ideas to life. Dedicated to clean code, user-centric design, and continuous learning.
+                </p>
             </div>
+
+            {{-- Section 2: Navigation --}}
+            <div class="md:col-span-1">
+                <h4 class="text-xl font-semibold text-white mb-5 font-montserrat">Navigation</h4>
+                <ul class="space-y-3">
+                    <li><a href="{{ url('/') }}" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-blue-500"></i> Home</a></li>
+                    <li><a href="{{ url('/about') }}" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-blue-500"></i> About Me</a></li>
+                    <li><a href="{{ url('/skills') }}" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-blue-500"></i> Skills</a></li>
+                    <li><a href="{{ url('/portfolio') }}" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-blue-500"></i> Portfolio</a></li>
+                    <li><a href="{{ url('/contact') }}" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-blue-500"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            {{-- Section 3: Contact & Social Media --}}
+            <div class="md:col-span-1">
+                <h4 class="text-xl font-semibold text-white mb-5 font-montserrat">Get In Touch</h4>
+                <p class="text-gray-300 mb-4">Have an exciting project in mind or just want to chat? Reach out!</p>
+                <ul class="space-y-3 mb-6">
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope text-blue-500 mr-3"></i>
+                        <a href="mailto:your.email@example.com" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">rnurfadil5@gmail.com</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone-alt text-blue-500 mr-3"></i>
+                        <a href="tel:+1234567890" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">08989103032</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-blue-500 mr-3"></i>
+                        <span class="text-gray-400">Depok, West Java, Indonesia</span>
+                    </li>
+                </ul>
+
+                <div class="flex space-x-6 footer-social-links">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-125">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/bribubub" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-125">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://x.com/ImpactKonin" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-125">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800/60 mt-10 pt-6 text-center text-gray-500 text-sm">
+            <p>&copy; <span id="current-year-footer"></span> Rafi Nurfadhil Putra. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Toggle mobile menu visibility
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Set current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('current-year-footer').textContent = new Date().getFullYear();
+
+        const animateElements = document.querySelectorAll('[data-animate]');
+
+        const observerOptions = {
+            root: null, 
+            rootMargin: '0px',
+            threshold: 0.1 
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const element = entry.target;
+                    const animationType = element.dataset.animate;
+                    const animationDelay = element.dataset.delay || '0'; 
+
+                    if (!element.classList.contains('opacity-0')) {
+                        element.classList.add('opacity-0');
+                    }
+
+                    setTimeout(() => {
+                        element.classList.remove('opacity-0'); 
+                        element.classList.add(`animated-${animationType}`); 
+                        element.style.animationDelay = `${animationDelay}ms`; 
+                    }, 0); 
+
+                   
+                    observer.unobserve(element);
+                }
+            });
+        }, observerOptions);
+
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
     </script>
 </body>
 </html>

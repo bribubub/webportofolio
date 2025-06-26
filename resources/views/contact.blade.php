@@ -4,28 +4,28 @@
 
 @section('content')
 <section id="contact" class="section-padding">
-    <div class="container mx-auto px-4 md:px-8 max-w-5xl card-base rounded-2xl p-8 lg:p-12 animate-fadeIn">
-        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gradient animate-slideInUp">Let's Connect</h2>
+    <div class="container mx-auto px-4 md:px-8 max-w-5xl card-base rounded-2xl p-8 lg:p-12 opacity-0" data-animate="fadeIn" data-delay="100">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gradient opacity-0" data-animate="slideInUp" data-delay="200">Let's Connect</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- Contact Information -->
-            <div class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-700 animate-slideInLeft animation-delay-200">
-                <h3 class="text-3xl font-semibold mb-6 text-blue-400 border-b border-gray-700 pb-3">Reach Out Directly</h3>
+         
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-700 opacity-0" data-animate="slideInLeft" data-delay="400">
+                <h3 class="text-3xl font-semibold mb-6 text-blue-400 border-b-2 border-gray-700 pb-3">Reach Out Directly</h3>
                 <ul class="space-y-6 text-gray-300 text-lg">
                     <li class="flex items-center">
                         <svg class="w-7 h-7 mr-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        <span>Email: <a href="mailto:your.email@example.com" class="text-blue-400 hover:underline">your.email@example.com</a></span>
+                        <span>Email: <a href="mailto:your.email@example.com" class="text-blue-400 hover:underline">rnurfadil5@gmail.com</a></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-7 h-7 mr-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                        <span>Phone: <a href="tel:+1234567890" class="text-blue-400 hover:underline">+1 (234) 567-890</a></span>
+                        <span>Phone: <a href="tel:+1234567890" class="text-blue-400 hover:underline">08989103032</a></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-7 h-7 mr-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        <span>Location: [Your City, Country]</span>
+                        <span>Location: Depok, West Java, Indonesia</span>
                     </li>
                 </ul>
                 <div class="mt-10">
-                    <h3 class="text-3xl font-semibold mb-5 text-blue-400 border-b border-gray-700 pb-3">Find Me Online</h3>
+                    <h3 class="text-3xl font-semibold mb-5 text-blue-400 border-b-2 border-gray-700 pb-3">Find Me Online</h3>
                     <div class="flex space-x-8 justify-center md:justify-start">
                         <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-110">
                             <svg fill="currentColor" viewBox="0 0 24 24" class="w-9 h-9"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 110-4 2 2 0 010 4z"></path></svg>
@@ -40,19 +40,18 @@
                 </div>
             </div>
 
-            <!-- Contact Form -->
-            <div class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-700 animate-fadeIn animation-delay-400">
-                <h3 class="text-3xl font-semibold mb-6 text-blue-400 border-b border-gray-700 pb-3">Send Me a Message</h3>
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-700 opacity-0" data-animate="fadeIn" data-delay="600">
+                <h3 class="text-3xl font-semibold mb-6 text-blue-400 border-b-2 border-gray-700 pb-3">Send Me a Message</h3>
 
                 {{-- Session messages for success or error --}}
                 @if(Session::has('success'))
-                    <div class="bg-green-600 text-white p-4 rounded-lg mb-4 shadow-md animate-fadeIn">
+                    <div class="bg-green-600 text-white p-4 rounded-lg mb-4 shadow-md animated-fadeIn">
                         {{ Session::get('success') }}
                     </div>
                 @endif
 
                 @if(Session::has('error'))
-                    <div class="bg-red-600 text-white p-4 rounded-lg mb-4 shadow-md animate-fadeIn">
+                    <div class="bg-red-600 text-white p-4 rounded-lg mb-4 shadow-md animated-fadeIn">
                         {{ Session::get('error') }}
                     </div>
                 @endif

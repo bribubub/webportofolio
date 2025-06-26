@@ -1,35 +1,41 @@
 @extends('layouts.app')
 
-@section('title', 'Your Name - About Me')
+@section('title', 'Your Name - About')
 
 @section('content')
-<section id="about" class="section-padding">
-    <div class="container mx-auto px-4 md:px-8 max-w-6xl card-base rounded-2xl p-8 lg:p-12 animate-fadeIn">
-        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gradient animate-slideInUp">About Me</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div class="space-y-6 text-lg leading-relaxed text-gray-300 animate-slideInLeft animation-delay-200">
-                <p>
-                    Hello! I'm [Your Name], a dedicated and innovative <span class="text-blue-300">[Your Profession/Role]</span> with a profound passion for crafting intuitive and high-performance web applications. My journey into technology commenced with <span class="font-medium text-blue-200">[mention an early experience or inspiration, e.g., discovering web development through a simple HTML page, tinkering with old computers]</span>, which swiftly evolved into a deep fascination for how software can seamlessly blend creativity with practical problem-solving to shape our digital world.
-                </p>
-                <p>
-                    I proudly graduated from <span class="font-medium text-blue-200">[Your University/Institution]</span> with a <span class="font-medium text-blue-200">[Your Degree]</span> in <span class="font-medium text-blue-200">[Your Major]</span>, where I specialized in <span class="font-medium text-blue-200">[mention a specialization, e.g., advanced full-stack development, human-computer interaction, scalable cloud architectures]</span>. My academic tenure was marked by hands-on projects, rigorous theoretical studies, and a constant drive to master core principles like <span class="font-medium text-blue-200">[mention specific academic strengths, e.g., object-oriented design patterns, efficient algorithms, secure coding practices]</span>. I am particularly drawn to <span class="font-medium text-blue-200">[mention a specific area like user-centric design, performance optimization, or building robust APIs]</span>, always striving to deliver solutions that are not just functional, but also elegant and maintainable.
-                </p>
-                <p>
-                    Beyond the code editor, I am a firm believer in lifelong learning. I frequently engage with new technologies, participate in online courses, and follow industry trends to ensure my skill set remains cutting-edge and aligned with the demands of modern web development. My goal is to build impactful digital experiences that are both robust and delightful to use.
-                </p>
+<section id="about" class="section-padding bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
+    <div class="container mx-auto max-w-7xl px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center opacity-0" data-animate="fadeIn" data-delay="100">
+        
+
+    <div class="relative group opacity-0" data-animate="slideInLeft" data-delay="400">
+            <div class="w-full h-full bg-gray-800 rounded-2xl p-6 shadow-2xl border border-gray-700 transform transition hover:scale-105">
+                <img src="WhatsApp Image 2023-02-05 at 20.14.19.jpg" alt="Profile Image" class="w-full rounded-xl mb-6">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-blue-400">Rafi Nurfadhil Putra</h3>
+                    <p class="text-gray-400 mt-2">Internet of Things</p>
+                </div>
             </div>
-            <div class="bg-gray-800 p-8 rounded-xl shadow-inner border border-gray-700 animate-fadeIn animation-delay-400">
-                <h3 class="text-3xl font-semibold mb-6 text-blue-400 border-b border-gray-700 pb-3">Interests & What Drives Me</h3>
-                <ul class="list-disc list-inside text-gray-300 space-y-3 pl-4">
-                    <li>Exploring the latest advancements in web technologies and emerging frameworks.</li>
-                    <li>Contributing to open-source projects, giving back to the community that has taught me so much.</li>
-                    <li>Tackling complex coding challenges on platforms like LeetCode and HackerRank to sharpen my algorithmic thinking.</li>
-                    <li>Capturing the beauty of the world through photography, often finding inspiration for design.</li>
-                    <li>Engaging with non-fiction literature, especially on topics like artificial intelligence, psychology, and futuristic concepts.</li>
-                    <li>Volunteering for tech mentorship programs or local coding initiatives.</li>
-                    <li>[Add a personal hobby, e.g., perfecting the art of homebrewing, exploring new hiking trails, or playing strategic board games].</li>
-                </ul>
+        </div>
+
+        
+        <div class="space-y-8">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gradient opacity-0" data-animate="slideInUp" data-delay="200">About Me</h2>
+
+            <div class="space-y-4 text-lg text-gray-300 leading-relaxed">
+                <p class="opacity-0" data-animate="slideInUp" data-delay="600">
+                    Hello IM Rafi Nurfadhil Putra from Informatic Technology my major from IoT (Internet of things) and i am a full stack developer
+            </p>
+                <p class="opacity-0" data-animate="slideInUp" data-delay="800">
+                    my hobby its pkaying games handphone shooter, reading some books from japanese manga, and watching anime
+            </p>
+                <p class="opacity-0" data-animate="slideInUp" data-delay="1000">
+                    I am passionate about creating innovative and user-centric web applications that solve real-world problems. With a strong foundation in both front-end and back-end technologies, I strive to deliver seamless and engaging user experiences.
+            </p>
             </div>
+
+            <a href="{{ url('/contact') }}" class="inline-block btn-primary-gradient text-white font-bold py-3 px-6 rounded-full text-lg shadow-xl transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 opacity-0" data-animate="slideInUp" data-delay="1200">
+                Let's Connect
+            </a>
         </div>
     </div>
 </section>
