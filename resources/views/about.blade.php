@@ -26,10 +26,10 @@
                     Hello IM Rafi Nurfadhil Putra from Informatic Technology my major from IoT (Internet of things) and i am a full stack developer
             </p>
                 <p class="opacity-0" data-animate="slideInUp" data-delay="800">
-                    my hobby its pkaying games handphone shooter, reading some books from japanese manga, and watching anime
+                    Im a student at President University, im learning about programming and mantenance a device electric 
             </p>
                 <p class="opacity-0" data-animate="slideInUp" data-delay="1000">
-                    I am passionate about creating innovative and user-centric web applications that solve real-world problems. With a strong foundation in both front-end and back-end technologies, I strive to deliver seamless and engaging user experiences.
+                My hobby its playing games handphone shooter, reading some books from japanese manga, and watching anime
             </p>
             </div>
 

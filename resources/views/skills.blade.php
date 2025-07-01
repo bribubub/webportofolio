@@ -23,7 +23,7 @@
                     </li>
                     <li>
                         <div class="flex justify-between items-center mb-1">
-                            <span class="text-gray-200 text-lg">JavaScript (React.js, Vue.js)</span>
+                            <span class="text-gray-200 text-lg">Java</span>
                             <span class="text-base font-medium text-blue-300">Proficient</span>
                         </div>
                         <div class="w-full bg-gray-700 rounded-full h-3">
@@ -50,11 +50,20 @@
                     </li>
                     <li>
                         <div class="flex justify-between items-center mb-1">
-                            <span class="text-gray-200 text-lg">Version Control (Git, GitHub)</span>
+                            <span class="text-gray-200 text-lg">IoT (Arduino Ide)</span>
                             <span class="text-base font-medium text-blue-300">Advanced</span>
                         </div>
                         <div class="w-full bg-gray-700 rounded-full h-3">
                             <div class="bg-blue-500 h-3 rounded-full opacity-0" data-animate="pulse-width" data-delay="1000" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-gray-200 text-lg">Mikrotik</span>
+                            <span class="text-base font-medium text-blue-300">Proficient</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-3">
+                            <div class="bg-blue-500 h-3 rounded-full opacity-0" data-animate="pulse-width" data-delay="1000" style="width: 80%;"></div>
                         </div>
                     </li>
                 </ul>
@@ -64,13 +73,13 @@
             <div class="card-base rounded-xl p-8 opacity-0" data-animate="slideInUp" data-delay="600">
                 <h3 class="text-3xl font-semibold mb-6 text-blue-400 border-b-2 border-gray-700 pb-3">Soft Skills</h3>
                 <ul class="list-disc list-inside space-y-4 text-gray-300 pl-4">
-                    <li>**Problem-Solving:** Adept at dissecting complex challenges and architecting elegant, scalable solutions.</li>
-                    <li>**Communication:** Articulate and effective communicator, fostering clear and productive collaboration.</li>
-                    <li>**Teamwork:** Proven ability to thrive in collaborative environments, contributing to shared success.</li>
-                    <li>**Adaptability:** Eager to learn and rapidly integrate new technologies and methodologies.</li>
-                    <li>**Time Management:** Highly organized and efficient, consistently delivering projects on schedule.</li>
-                    <li>**Critical Thinking:** Analyzes situations thoroughly to make informed decisions.</li>
-                    <li>**Leadership:** Capable of guiding and motivating teams towards common goals.</li>
+                    <li>Problem-Solving: Adept at dissecting complex challenges and architecting elegant, scalable solutions.</li>
+                    <li>Communication: Articulate and effective communicator, fostering clear and productive collaboration.</li>
+                    <li>Teamwork: Proven ability to thrive in collaborative environments, contributing to shared success.</li>
+                    <li>Adaptability: Eager to learn and rapidly integrate new technologies and methodologies.</li>
+                    <li>Time Management: Highly organized and efficient, consistently delivering projects on schedule.</li>
+                    <li>Critical Thinking: Analyzes situations thoroughly to make informed decisions.</li>
+                    <li>Leadership: Capable of guiding and motivating teams towards common goals.</li>
                 </ul>
             </div>
 
