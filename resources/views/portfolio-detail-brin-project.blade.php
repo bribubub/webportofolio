@@ -13,41 +13,37 @@
         <h1 class="text-4xl md:text-5xl font-extrabold text-gradient mb-8 opacity-0" data-animate="slideInUp" data-delay="200">BRIN Project: Smart Camera IoT</h1>
 
         <div class="mb-12 opacity-0" data-animate="fadeIn" data-delay="400">
-            <img src="https://placehold.co/800x500/1e293b/60A5FA?text=BRIN+Project+Image" alt="BRIN Project Main Image" class="w-full rounded-xl shadow-2xl border border-gray-700">
+             <img src="{{ asset('WhatsApp Image 2025-07-08 at 08.55.52_8779aa83.jpg') }}" alt="Cibarusah Project 1 Main Image" class="w-full rounded-xl shadow-2xl border border-gray-700">
         </div>
 
         <div class="space-y-6 text-lg text-gray-300 leading-relaxed opacity-0" data-animate="slideInUp" data-delay="600">
             <h2 class="text-3xl font-semibold text-blue-400 mb-4">Project Overview</h2>
             <p>
-                Proyek BRIN ini berfokus pada pengembangan sistem kamera cerdas yang memanfaatkan perangkat IoT (Internet of Things), khususnya ESP32-CAM. Tujuannya adalah untuk mendeteksi objek atau kondisi tertentu secara real-time dan memberikan notifikasi otomatis. Sistem ini dirancang untuk aplikasi di bidang keamanan, pemantauan lingkungan, atau analisis perilaku di area terbatas.
+                This BRIN project focuses on developing an intelligent camera system that utilizes IoT (Internet of Things) devices, specifically the ESP32-CAM. The goal is to detect certain objects or conditions in real-time and provide automatic notifications. The system is designed for applications in agriculture
             </p>
             <p>
-                Teknologi utama yang digunakan mencakup mikrokontroler ESP32-CAM untuk akuisisi gambar, komunikasi Wi-Fi untuk transfer data, dan integrasi dengan platform cloud untuk pemrosesan dan penyimpanan data.
-            </p>
+                Key technologies used include the ESP32-CAM microcontroller for image acquisition, Wi-Fi communication for data transfer, and integration with a cloud platform for data processing and storage.            </p>
 
             <h2 class="text-3xl font-semibold text-blue-400 mb-4">Features & Technologies Used</h2>
             <ul class="list-disc list-inside space-y-2 pl-4">
-                <li>**Hardware:** ESP32-CAM (Mikrokontroler dengan kamera terintegrasi)</li>
-                <li>**Programming Language:** Arduino (untuk ESP32), PHP/Laravel (untuk backend)</li>
-                <li>**Communication:** Wi-Fi (HTTP/MQTT)</li>
-                <li>**Cloud Integration:** Penyimpanan data gambar/video, analisis, dan sistem notifikasi</li>
-                <li>**Object Detection:** (Opsional, jika diimplementasikan: penggunaan library deteksi objek ringan)</li>
+                <li>Hardware: ESP32-CAM (Microcontroller with integrated camera)</li>
+                <li>Programming Language: Arduino (untuk ESP32)</li>
+                <li>Communication: Wi-Fi (HTTP/MQTT)</li>
+                <li>Local storage: Image/video data storage, analysis.</li>
             </ul>
 
-            <h2 class="text-3xl font-semibold text-blue-400 mb-4">Challenges & Solutions</h2>
+            <h2 class="text-3xl font-semibold text-blue-400 mb-4">Challenges</h2>
             <p>
-                Salah satu tantangan utama adalah optimasi performa deteksi objek pada hardware dengan sumber daya terbatas (ESP32-CAM) dan memastikan transfer data yang efisien. Solusinya melibatkan optimasi firmware, kompresi gambar, dan penggunaan protokol komunikasi yang ringan.
-            </p>
+            One of the main challenges was optimizing object detection performance on resource-constrained hardware (ESP32-CAM) and ensuring efficient data transfer. The solution involved firmware optimization, image compression, and the use of lightweight communication protocols.            </p>
 
             <h2 class="text-3xl font-semibold text-blue-400 mb-4">Screenshots / Demos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
                 <div>
-                    <img src="https://placehold.co/400x250/1e293b/60A5FA?text=Demo+Screenshot+1" alt="Demo Screenshot 1" class="w-full rounded-lg shadow-md mb-4">
-                    <p class="text-sm text-gray-400 text-center">Tampilan dashboard pemantauan</p>
+                    <img src="{{ asset('Screenshot_20250508-114112.jpg') }}" alt="Demo Screenshot 1" class="w-full rounded-lg shadow-md mb-4">                    <p class="text-sm text-gray-400 text-center"></p>
                 </div>
                 <div>
-                    <img src="https://placehold.co/400x250/1e293b/60A5FA?text=Demo+Screenshot+2" alt="Demo Screenshot 2" class="w-full rounded-lg shadow-md mb-4">
-                    <p class="text-sm text-gray-400 text-center">Notifikasi deteksi objek</p>
+                    <img src="{{ asset('Screenshot_20250508-114120.jpg') }}" alt="Demo Screenshot 1" class="w-full rounded-lg shadow-md mb-4">
+                    <p class="text-sm text-gray-400 text-center"></p>
                 </div>
             </div>
         </div>

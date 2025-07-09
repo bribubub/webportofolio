@@ -10,45 +10,43 @@
             Back to Portfolio
         </a>
 
-        <h1 class="text-4xl md:text-5xl font-extrabold text-gradient mb-8 opacity-0" data-animate="slideInUp" data-delay="200">Cibarusah Project 1: Task Management App</h1>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gradient mb-8 opacity-0" data-animate="slideInUp" data-delay="200">Cibarusah Project 1: Create A New Server Network and Attach A Aable Netwrok</h1>
 
         <div class="mb-12 opacity-0" data-animate="fadeIn" data-delay="400">
-            <img src="https://placehold.co/800x500/1e293b/60A5FA?text=Cibarusah+Project+1+Image" alt="Cibarusah Project 1 Main Image" class="w-full rounded-xl shadow-2xl border border-gray-700">
+            <img src="{{ asset('cibarusah1.jpg') }}" alt="Cibarusah Project 1 Main Image" class="w-full rounded-xl shadow-2xl border border-gray-700">
         </div>
 
         <div class="space-y-6 text-lg text-gray-300 leading-relaxed opacity-0" data-animate="slideInUp" data-delay="600">
             <h2 class="text-3xl font-semibold text-blue-400 mb-4">Project Overview</h2>
             <p>
-                Proyek ini adalah aplikasi manajemen tugas yang canggih dengan pembaruan real-time dan fitur kolaborasi. Pengguna dapat membuat, mengatur, menetapkan, dan melacak tugas dengan deadline kustom, prioritas, dan kategori. Ini dirancang untuk meningkatkan produktivitas tim dan individu.
-            </p>
+        This project involved building and maintaining a network infrastructure for a Vocational High School located in Cibarusah. The main objectives were to design and implement a functional and stable network system, perform structured cable pulling to all classrooms, and ensure that the entire setup was correctly installed and operational. The scope of work included setting up routers and switches, organizing cable management, and verifying connectivity across the school to support both teaching and administrative needs. 
+        </p>
             <p>
-                Fitur utama mencakup penyusunan ulang tugas dengan drag-and-drop, kolaborasi pengguna dengan kontrol izin, dan notifikasi real-time memanfaatkan WebSockets untuk umpan balik instan.
+            The project was carried out over the course of three full days and was a collaborative effort between several students and a supervising instructor. This not only provided hands-on experience for the students but also ensured that the network was built with both technical precision and teamwork. The outcome was a significant improvement in the school’s digital infrastructure, enabling smoother access to online resources and internal systems.
             </p>
 
-            <h2 class="text-3xl font-semibold text-blue-400 mb-4">Features & Technologies Used</h2>
+            <h2 class="text-3xl font-semibold text-blue-400 mb-4">What We Do In There?</h2>
             <ul class="list-disc list-inside space-y-2 pl-4">
-                <li>**Frontend:** HTML, CSS (Tailwind CSS), JavaScript (dengan library interaktif untuk drag-and-drop)</li>
-                <li>**Backend:** PHP, Laravel Framework</li>
-                <li>**Database:** MySQL</li>
-                <li>**Real-time:** WebSockets (misalnya Pusher atau Laravel Echo)</li>
-                <li>**Authentication:** Sistem login/register</li>
-                <li>**Task Management:** Fitur CRUD penuh untuk tugas, kategori, prioritas</li>
+                <li>creating a server local for a network</li>
+                <li>set up some router connect to server</li>
+                <li>set up and maintenance the pc class to connect server with a cable</li>
+                <li>retract cable network to various classrooms</li>
             </ul>
 
-            <h2 class="text-3xl font-semibold text-blue-400 mb-4">Challenges & Solutions</h2>
+            <h2 class="text-3xl font-semibold text-blue-400 mb-4">Challenges </h2>
             <p>
-                Tantangan utamanya adalah membangun sistem real-time yang stabil dan skalabel untuk kolaborasi tugas, serta mengelola izin pengguna yang kompleks. Solusinya melibatkan arsitektur backend yang kuat, penggunaan Laravel Broadcasting, dan desain database yang efisien.
+                The main challenge is to build a stable internet system as well as a location which is rather complicated and uses only a small budget.
             </p>
 
             <h2 class="text-3xl font-semibold text-blue-400 mb-4">Screenshots / Demos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
                 <div>
-                    <img src="https://placehold.co/400x250/1e293b/60A5FA?text=Task+List+Screenshot" alt="Task List Screenshot" class="w-full rounded-lg shadow-md mb-4">
-                    <p class="text-sm text-gray-400 text-center">Tampilan daftar tugas</p>
+                    <img src="{{ asset('cibarusah1.3.jpg') }}" alt="Task List Screenshot" class="w-full rounded-lg shadow-md mb-4">
+                    <p class="text-sm text-gray-400 text-center"></p>
                 </div>
                 <div>
-                    <img src="https://placehold.co/400x250/1e293b/60A5FA?text=Collaboration+View" alt="Collaboration View" class="w-full rounded-lg shadow-md mb-4">
-                    <p class="text-sm text-gray-400 text-center">Tampilan kolaborasi tim</p>
+                    <img src="{{ asset('cibarusah1.2.jpg') }}" alt="Collaboration View" class="w-full rounded-lg shadow-md mb-4">
+                    <p class="text-sm text-gray-400 text-center"></p>
                 </div>
             </div>
         </div>

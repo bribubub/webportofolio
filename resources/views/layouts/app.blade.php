@@ -228,10 +228,7 @@
                         <i class="fas fa-envelope text-blue-500 mr-3"></i>
                         <a href="mailto:your.email@example.com" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">rnurfadil5@gmail.com</a>
                     </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-phone-alt text-blue-500 mr-3"></i>
-                        <a href="tel:+1234567890" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">08989103032</a>
-                    </li>
+                    
                     <li class="flex items-center">
                         <i class="fas fa-map-marker-alt text-blue-500 mr-3"></i>
                         <span class="text-gray-400">Depok, West Java, Indonesia</span>
@@ -239,7 +236,7 @@
                 </ul>
 
                 <div class="flex space-x-6 footer-social-links">
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-125">
+                    <a href="https://www.linkedin.com/in/rafi-putra-559849373/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-125">
                         <i class="fab fa-linkedin fa-2x"></i>
                     </a>
                     <a href="https://github.com/bribubub" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-125">

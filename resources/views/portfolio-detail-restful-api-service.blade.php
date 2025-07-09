@@ -13,43 +13,39 @@
         <h1 class="text-4xl md:text-5xl font-extrabold text-gradient mb-8 opacity-0" data-animate="slideInUp" data-delay="200">RESTful API Service: Inventory Management</h1>
 
         <div class="mb-12 opacity-0" data-animate="fadeIn" data-delay="400">
-            <img src="https://placehold.co/800x500/1e293b/60A5FA?text=API+Service+Image" alt="RESTful API Service Main Image" class="w-full rounded-xl shadow-2xl border border-gray-700">
+            <img src="{{ asset('smkproject1.3.jpg') }}" alt="RESTful API Service Main Image" class="w-full rounded-xl shadow-2xl border border-gray-700">
         </div>
 
         <div class="space-y-6 text-lg text-gray-300 leading-relaxed opacity-0" data-animate="slideInUp" data-delay="600">
             <h2 class="text-3xl font-semibold text-blue-400 mb-4">Project Overview</h2>
             <p>
-                Proyek ini melibatkan perancangan dan implementasi API RESTful yang komprehensif untuk manajemen inventaris. API ini dilengkapi dengan otentikasi yang kuat (menggunakan JWT), validasi input yang teliti, dan operasi CRUD (Create, Read, Update, Delete) penuh untuk berbagai entitas inventaris.
+                The project at SMK Taruna Bhakti was a complete overhaul of the school's previous network infrastructure. Initially, the school relied on a traditional copper-based network that often faced limitations in speed, stability, and scalability. To address these issues, we replaced the entire system with a fiber optic-based solution, which significantly improved data transmission quality and future-proofed the network.
             </p>
             <p>
-                API ini didokumentasikan dengan cermat menggunakan spesifikasi Swagger/OpenAPI, memastikan kemudahan integrasi oleh aplikasi klien (frontend, mobile apps) yang akan menggunakannya. Fokus pada keamanan, skalabilitas, dan kemudahan penggunaan API.
+               The work involved designing a new network layout, pulling fiber optic cables throughout the school building, and installing updated networking equipment such as routers, switches, and firewalls. This transformation not only enhanced the performance and security of the school's network but also ensured that students and staff could benefit from a faster, more reliable digital environment.
             </p>
 
-            <h2 class="text-3xl font-semibold text-blue-400 mb-4">Features & Technologies Used</h2>
+            <h2 class="text-3xl font-semibold text-blue-400 mb-4">What We Do In There?</h2>
             <ul class="list-disc list-inside space-y-2 pl-4">
-                <li>**Backend:** PHP, Laravel Framework</li>
-                <li>**API Standard:** RESTful principles</li>
-                <li>**Authentication:** JWT (JSON Web Tokens)</li>
-                <li>**Database:** MySQL</li>
-                <li>**Operations:** Full CRUD operations (Create, Read, Update, Delete)</li>
-                <li>**Documentation:** Swagger / OpenAPI</li>
-                <li>**Validation:** Server-side input validation</li>
+                <li>Set Up Mikrotik</li>
+                <li>Testing Mikrotik</li>
+                <li>splicing fiber optic</li> 
             </ul>
 
-            <h2 class="text-3xl font-semibold text-blue-400 mb-4">Challenges & Solutions</h2>
+            <h2 class="text-3xl font-semibold text-blue-400 mb-4">Challenges</h2>
             <p>
-                Tantangan utama adalah memastikan keamanan API yang ketat dengan otentikasi JWT dan menangani validasi input yang kompleks secara efisien. Solusinya melibatkan penggunaan paket otentikasi Laravel Passport atau Sanctum, dan penerapan service layer untuk logika bisnis.
+                the challenge is that it takes a long time about 2 months and also extra patience to go through it and cooperation between teams is also needed to connect between the server and also all routers in the school.
             </p>
 
             <h2 class="text-3xl font-semibold text-blue-400 mb-4">Screenshots / Demos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
                 <div>
-                    <img src="https://placehold.co/400x250/1e293b/60A5FA?text=API+Endpoint+List" alt="API Endpoint List Screenshot" class="w-full rounded-lg shadow-md mb-4">
-                    <p class="text-sm text-gray-400 text-center">Daftar endpoint API</p>
+                    <img src="{{ asset('smkproject1.2.jpg') }}" alt="API Endpoint List Screenshot" class="w-full rounded-lg shadow-md mb-4">
+                    <p class="text-sm text-gray-400 text-center"></p>
                 </div>
-                <div>
-                    <img src="https://placehold.co/400x250/1e293b/60A5FA?text=Swagger+UI" alt="Swagger UI Screenshot" class="w-full rounded-lg shadow-md mb-4">
-                    <p class="text-sm text-gray-400 text-center">Tampilan dokumentasi Swagger UI</p>
+                 <div>
+                    <img src="{{ asset('smkproject1.jpg') }}" alt="Swagger UI Screenshot" class="w-full rounded-lg shadow-md mb-4">
+                    <p class="text-sm text-gray-400 text-center"></p>
                 </div>
             </div>
         </div>

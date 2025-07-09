@@ -12,7 +12,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             
             <div class="card-base rounded-xl overflow-hidden group opacity-0" data-animate="slideInUp" data-delay="500">
-                <img src="https://placehold.co/600x400/1E293B/60A5FA?text=E-com merce" alt="E-commerce Platform Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
+                <img src="{{ asset('WhatsApp Image 2025-07-08 at 08.55.52_8779aa83.jpg') }}" alt="E-commerce Platform Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold mb-3 text-blue-300">BRIN Project</h3>
                     <p class="text-gray-400 text-sm mb-4 line-clamp-3">
@@ -27,7 +27,7 @@
 
             
             <div class="card-base rounded-xl overflow-hidden group opacity-0" data-animate="slideInUp" data-delay="700">
-                <img src="https://placehold.co/600x400/1E293B/60A5FA?text=Task+Manager" alt="Task Management App Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
+                <img src="{{ asset('cibarusah1.jpg') }}" alt="Task Management App Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold mb-3 text-blue-300">Cibarusah Project 1</h3>
                     <p class="text-gray-400 text-sm mb-4 line-clamp-3">
@@ -42,7 +42,7 @@
 
             
             <div class="card-base rounded-xl overflow-hidden group opacity-0" data-animate="slideInUp" data-delay="900">
-                <img src="https://placehold.co/600x400/1E293B/60A5FA?text=Blog+Platform" alt="Blog Platform Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
+                <img src="{{ asset('cibarusah2.1.jpg') }}" alt="Blog Platform Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold mb-3 text-blue-300">Cibarusah Project 2</h3>
                     <p class="text-gray-400 text-sm mb-4 line-clamp-3">
@@ -57,12 +57,12 @@
 
            
             <div class="card-base rounded-xl overflow-hidden group opacity-0" data-animate="slideInUp" data-delay="1100">
-                <img src="https://placehold.co/600x400/1E293B/60A5FA?text=Social+App" alt="Social Media Clone Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
+                <img src="{{ asset('cibubur1.jpg') }}" alt="Social Media Clone Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold mb-3 text-blue-300">project kuningan </h3>
                     <p class="text-gray-400 text-sm mb-4 line-clamp-3">
-                        Exploration and development of a simplified social media platform focusing on core functionalities: user profiles, post creation, liking, and commenting. Emphasized a scalable database design and efficient data retrieval for a smooth user experience, simulating real-world social interactions.
-                    </p>
+                        Management system for a buried company, configuration, and security measures. The project involved setting up routers, switches, and firewalls to ensure a robust and secure network infrastructure.
+                </p>
                     <a href="{{ url('/portfolio/internship-winata') }}" class="text-blue-400 hover:text-blue-300 font-medium text-lg flex items-center group">
                      View Project
                         <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4-4m0 0l-4-4m4 4H3"></path></svg>
@@ -72,11 +72,11 @@
 
             
             <div class="card-base rounded-xl overflow-hidden group opacity-0" data-animate="slideInUp" data-delay="1300">
-                <img src="https://placehold.co/600x400/1E293B/60A5FA?text=API+Service" alt="RESTful API Service Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
+                <img src="smkproject1.3.jpg" alt="RESTful API Service Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold mb-3 text-blue-300">SMK Taruna Bhakti Project 1</h3>
                     <p class="text-gray-400 text-sm mb-4 line-clamp-3">
-                        management networking system for SMK Taruna Bhakti, including network design, configuration, and security measures. The project involved setting up routers, switches, and firewalls to ensure a robust and secure network infrastructure for the school 
+                        Management networking system for SMK Taruna Bhakti, including network design, configuration, and security measures. The project involved setting up routers, switches, and firewalls to ensure a robust and secure network infrastructure for the school 
                     </p>
                     <a href="{{ url('/portfolio/restful-api-service') }}" class="text-blue-400 hover:text-blue-300 font-medium text-lg flex items-center group">
                      View Project
@@ -87,7 +87,7 @@
 
             
             <div class="card-base rounded-xl overflow-hidden group opacity-0" data-animate="slideInUp" data-delay="1500">
-                <img src="https://placehold.co/600x400/1E293B/60A5FA?text=Data+Viz" alt="Data Visualization Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
+                <img src="smkproject2.2.jpg" alt="Data Visualization Thumbnail" class="w-full h-56 object-cover object-center border-b border-gray-700 transform group-hover:scale-105 transition duration-300">
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold mb-3 text-blue-300">SMK Taruna Bhakti Project 2</h3>
                     <p class="text-gray-400 text-sm mb-4 line-clamp-3">

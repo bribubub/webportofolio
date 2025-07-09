@@ -15,10 +15,7 @@
                         <svg class="w-7 h-7 mr-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                         <span>Email: <a href="mailto:your.email@example.com" class="text-blue-400 hover:underline">rnurfadil5@gmail.com</a></span>
                     </li>
-                    <li class="flex items-center">
-                        <svg class="w-7 h-7 mr-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                        <span>Phone: <a href="tel:+1234567890" class="text-blue-400 hover:underline">08989103032</a></span>
-                    </li>
+                    
                     <li class="flex items-center">
                         <svg class="w-7 h-7 mr-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                         <span>Location: Depok, West Java, Indonesia</span>
@@ -27,10 +24,10 @@
                 <div class="mt-10">
                     <h3 class="text-3xl font-semibold mb-5 text-blue-400 border-b-2 border-gray-700 pb-3">Find Me Online</h3>
                     <div class="flex space-x-8 justify-center md:justify-start">
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-110">
+                        <a href="https://www.linkedin.com/in/rafi-putra-559849373/" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-110">
                             <svg fill="currentColor" viewBox="0 0 24 24" class="w-9 h-9"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 110-4 2 2 0 010 4z"></path></svg>
                         </a>
-                        <a href="https://github.com/yourprofile" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-110">
+                        <a href="https://github.com/bribubub" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-110">
                             <svg fill="currentColor" viewBox="0 0 24 24" class="w-9 h-9"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.475.088.687-.206.687-.457 0-.223-.008-.813-.013-1.636-2.782.603-3.37-1.34-3.37-1.34-.454-1.15-1.11-1.462-1.11-1.462-.908-.62.068-.608.068-.608 1.007.073 1.532 1.03 1.532 1.03.89 1.528 2.336 1.085 2.903.829.09-.643.349-1.085.635-1.336-2.22-.25-4.555-1.11-4.555-4.945 0-1.09.39-1.986 1.029-2.684-.103-.252-.446-1.272.097-2.659 0 0 .84-.27 2.75 1.025A9.643 9.643 0 0112 6.844c.85.006 1.7.113 2.508.337 1.909-1.295 2.748-1.025 2.748-1.025.542 1.387.2 2.407.098 2.659.64.698 1.028 1.594 1.028 2.684 0 3.844-2.339 4.69-4.565 4.935.359.309.678.92.678 1.855 0 1.336-.012 2.417-.012 2.747 0 .254.209.55.694.456C20.137 20.19 23 16.42 23 12.017 23 6.484 18.522 2 13 2h-1z" clip-rule="evenodd"></path></svg>
                         </a>
                         <a href="https://twitter.com/yourprofile" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-110">

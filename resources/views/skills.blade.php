@@ -50,7 +50,7 @@
                     </li>
                     <li>
                         <div class="flex justify-between items-center mb-1">
-                            <span class="text-gray-200 text-lg">IoT (Arduino Ide)</span>
+                            <span class="text-gray-200 text-lg">IoT </span>
                             <span class="text-base font-medium text-blue-300">Advanced</span>
                         </div>
                         <div class="w-full bg-gray-700 rounded-full h-3">
@@ -72,14 +72,70 @@
             
             <div class="card-base rounded-xl p-8 opacity-0" data-animate="slideInUp" data-delay="600">
                 <h3 class="text-3xl font-semibold mb-6 text-blue-400 border-b-2 border-gray-700 pb-3">Soft Skills</h3>
-                <ul class="list-disc list-inside space-y-4 text-gray-300 pl-4">
-                    <li>Problem-Solving: Adept at dissecting complex challenges and architecting elegant, scalable solutions.</li>
-                    <li>Communication: Articulate and effective communicator, fostering clear and productive collaboration.</li>
-                    <li>Teamwork: Proven ability to thrive in collaborative environments, contributing to shared success.</li>
-                    <li>Adaptability: Eager to learn and rapidly integrate new technologies and methodologies.</li>
-                    <li>Time Management: Highly organized and efficient, consistently delivering projects on schedule.</li>
-                    <li>Critical Thinking: Analyzes situations thoroughly to make informed decisions.</li>
-                    <li>Leadership: Capable of guiding and motivating teams towards common goals.</li>
+                <ul class="space-y-4">
+                    <li class="soft-skill-item">
+                        <div class="flex items-start bg-gray-800 p-4 rounded-lg hover:bg-blue-900 hover:bg-opacity-50 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-md hover:shadow-xl">
+                            <i class="fas fa-lightbulb text-blue-400 text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-1">Problem-Solving</h4>
+                                <p class="text-gray-300 text-base">Adept at dissecting complex challenges and architecting elegant, scalable solutions.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="soft-skill-item">
+                        <div class="flex items-start bg-gray-800 p-4 rounded-lg hover:bg-blue-900 hover:bg-opacity-50 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-md hover:shadow-xl">
+                            <i class="fas fa-comments text-blue-400 text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-1">Communication</h4>
+                                <p class="text-gray-300 text-base">Articulate and effective communicator, fostering clear and productive collaboration.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="soft-skill-item">
+                        <div class="flex items-start bg-gray-800 p-4 rounded-lg hover:bg-blue-900 hover:bg-opacity-50 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-md hover:shadow-xl">
+                            <i class="fas fa-handshake text-blue-400 text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-1">Teamwork</h4>
+                                <p class="text-gray-300 text-base">Proven ability to thrive in collaborative environments, contributing to shared success.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="soft-skill-item">
+                        <div class="flex items-start bg-gray-800 p-4 rounded-lg hover:bg-blue-900 hover:bg-opacity-50 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-md hover:shadow-xl">
+                            <i class="fas fa-brain text-blue-400 text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-1">Adaptability</h4>
+                                <p class="text-gray-300 text-base">Eager to learn and rapidly integrate new technologies and methodologies.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="soft-skill-item">
+                        <div class="flex items-start bg-gray-800 p-4 rounded-lg hover:bg-blue-900 hover:bg-opacity-50 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-md hover:shadow-xl">
+                            <i class="fas fa-clock text-blue-400 text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-1">Time Management</h4>
+                                <p class="text-gray-300 text-base">Highly organized and efficient, consistently delivering projects on schedule.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="soft-skill-item">
+                        <div class="flex items-start bg-gray-800 p-4 rounded-lg hover:bg-blue-900 hover:bg-opacity-50 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-md hover:shadow-xl">
+                            <i class="fas fa-filter text-blue-400 text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-1">Critical Thinking</h4>
+                                <p class="text-gray-300 text-base">Analyzes situations thoroughly to make informed decisions.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="soft-skill-item">
+                        <div class="flex items-start bg-gray-800 p-4 rounded-lg hover:bg-blue-900 hover:bg-opacity-50 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-md hover:shadow-xl">
+                            <i class="fas fa-users text-blue-400 text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-1">Leadership</h4>
+                                <p class="text-gray-300 text-base">Capable of guiding and motivating teams towards common goals.</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
 

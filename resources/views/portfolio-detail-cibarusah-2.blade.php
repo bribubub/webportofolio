@@ -10,45 +10,40 @@
             Back to Portfolio
         </a>
 
-        <h1 class="text-4xl md:text-5xl font-extrabold text-gradient mb-8 opacity-0" data-animate="slideInUp" data-delay="200">Cibarusah Project 2: Blogging Platform</h1>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gradient mb-8 opacity-0" data-animate="slideInUp" data-delay="200">Cibarusah Project 2: Mentoring Junior Team Members And Create Server Printer With Maintenance PC </h1>
 
         <div class="mb-12 opacity-0" data-animate="fadeIn" data-delay="400">
-            <img src="https://placehold.co/800x500/1e293b/60A5FA?text=Cibarusah+Project+2+Image" alt="Cibarusah Project 2 Main Image" class="w-full rounded-xl shadow-2xl border border-gray-700">
+            <img src="{{ asset('cibarusah2.1.jpg') }}" alt="Cibarusah Project 2 Main Image" class="w-full rounded-xl shadow-2xl border border-gray-700">
         </div>
 
         <div class="space-y-6 text-lg text-gray-300 leading-relaxed opacity-0" data-animate="slideInUp" data-delay="600">
             <h2 class="text-3xl font-semibold text-blue-400 mb-4">Project Overview</h2>
             <p>
-                Proyek ini melibatkan perancangan dan pengembangan platform blogging kustom dari awal, dilengkapi dengan sistem manajemen konten (CMS) yang intuitif untuk penulis. Platform ini mendukung pengeditan teks kaya, integrasi Markdown, pengunggahan gambar, dan manajemen kategori, memberikan fleksibilitas penuh bagi konten kreator.
+                This project represents the development phase of the initial Cibarusah project, focusing on the enhancement and ongoing maintenance of the existing network infrastructure. The goal is to ensure a more stable and efficient system that supports future expansion and improved performance.
             </p>
             <p>
-                Termasuk sistem komentar yang kuat dengan kemampuan moderasi dan URL yang ramah SEO (Search Engine Optimization) untuk meningkatkan visibilitas konten di mesin pencari.
+                In addition to the technical work, this stage also includes mentoring and supervising junior team members. It involves guiding them through collaborative processes, helping them understand their roles, and ensuring they develop good work habits and technical skills through hands-on experience in a real project environment.
             </p>
 
-            <h2 class="text-3xl font-semibold text-blue-400 mb-4">Features & Technologies Used</h2>
+            <h2 class="text-3xl font-semibold text-blue-400 mb-4">What We Do In There?</h2>
             <ul class="list-disc list-inside space-y-2 pl-4">
-                <li>**Frontend:** HTML, CSS (Tailwind CSS), JavaScript</li>
-                <li>**Backend:** PHP, Laravel Framework</li>
-                <li>**Database:** MySQL</li>
-                <li>**Content Management:** Rich text editor, Markdown support, image upload</li>
-                <li>**User Interaction:** Commenting system with moderation</li>
-                <li>**SEO:** SEO-friendly URL generation</li>
+                <li>maintenance and update pc</li>
+                <li>creating server for printer</li>
             </ul>
-
-            <h2 class="text-3xl font-semibold text-blue-400 mb-4">Challenges & Solutions</h2>
+            <h2 class="text-3xl font-semibold text-blue-400 mb-4">Challenges</h2>
             <p>
-                Tantangan utama adalah membangun CMS yang ramah pengguna dari nol dan memastikan platform scalable untuk pertumbuhan konten. Solusinya melibatkan desain database yang terstruktur, implementasi arsitektur modular, dan pengujian performa yang ketat.
+                Junior team members had limited technical experience, requiring additional guidance and supervision. Coordination among the team was initially inefficient due to unclear division of tasks and inconsistent communication. The project also faced tight deadlines and limited resources, including budget and equipment. In addition, on-site conditions such as complicated cable routing and connectivity issues added to the difficulties of implementation and maintenance.
             </p>
 
             <h2 class="text-3xl font-semibold text-blue-400 mb-4">Screenshots / Demos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
                 <div>
-                    <img src="https://placehold.co/400x250/1e293b/60A5FA?text=CMS+Dashboard" alt="CMS Dashboard Screenshot" class="w-full rounded-lg shadow-md mb-4">
-                    <p class="text-sm text-gray-400 text-center">Tampilan dashboard CMS</p>
+                    <img src="{{ asset('cibarusah2.2.jpg') }}" alt="CMS Dashboard Screenshot" class="w-full rounded-lg shadow-md mb-4">
+                    <p class="text-sm text-gray-400 text-center"></p>
                 </div>
                 <div>
-                    <img src="https://placehold.co/400x250/1e293b/60A5FA?text=Blog+Post+View" alt="Blog Post View" class="w-full rounded-lg shadow-md mb-4">
-                    <p class="text-sm text-gray-400 text-center">Tampilan postingan blog</p>
+                    <img src="{{ asset('cibarusah2.3.jpg') }}" alt="Blog Post View" class="w-full rounded-lg shadow-md mb-4">
+                    <p class="text-sm text-gray-400 text-center"></p>
                 </div>
             </div>
         </div>
