@@ -236,7 +236,7 @@
                 </ul>
 
                 <div class="flex space-x-6 footer-social-links">
-                    <a href="https://www.linkedin.com/in/rafi-putra-559849373/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-125">
+                    <a href="https://www.linkedin.com/in/rafi-nurfadhil-putra-559849373/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-125">
                         <i class="fab fa-linkedin fa-2x"></i>
                     </a>
                     <a href="https://github.com/bribubub" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-125">

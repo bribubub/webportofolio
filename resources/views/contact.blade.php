@@ -24,7 +24,7 @@
                 <div class="mt-10">
                     <h3 class="text-3xl font-semibold mb-5 text-blue-400 border-b-2 border-gray-700 pb-3">Find Me Online</h3>
                     <div class="flex space-x-8 justify-center md:justify-start">
-                        <a href="https://www.linkedin.com/in/rafi-putra-559849373/" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-110">
+                        <a href="https://www.linkedin.com/in/rafi-nurfadhil-putra-559849373/" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-110">
                             <svg fill="currentColor" viewBox="0 0 24 24" class="w-9 h-9"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 110-4 2 2 0 010 4z"></path></svg>
                         </a>
                         <a href="https://github.com/bribubub" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:scale-110">
